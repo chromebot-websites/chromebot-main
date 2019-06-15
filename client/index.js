@@ -1,7 +1,8 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-let buildNumber = 0.23;
+let buildNumber = 0.24;
 
 console.log("Welcome to the chromebot website. This is client build B." + buildNumber + ".");
 
@@ -9,7 +10,20 @@ console.log("Welcome to the chromebot website. This is client build B." + buildN
 class App extends Component {
 	render() {
 		return (
-			<iframe src="https://chromebot-canary-and-chromebot.weebly.com/"/>
+			<Router>
+				<Switch>
+					<Route path="/status" render={() => {
+						return (
+							<iframe src="https://chromebot-status-page-beta-114.freshstatus.io/"/>
+						);
+					}}>
+					<Route render={() => {
+						return (
+							<iframe src="https://chromebot-canary-and-chromebot.weebly.com/"/>
+						);
+					}}>
+				</Switch>
+			</Router>
 		);
 	}
 }
