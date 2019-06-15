@@ -16,12 +16,12 @@ class App extends Component {
 						return (
 							<iframe src="https://chromebot-status-page-beta-114.freshstatus.io/"/>
 						);
-					}}>
+					}}/>
 					<Route render={() => {
 						return (
 							<iframe src="https://chromebot-canary-and-chromebot.weebly.com/"/>
 						);
-					}}>
+					}}/>
 				</Switch>
 			</Router>
 		);
