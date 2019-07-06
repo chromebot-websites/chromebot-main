@@ -18,6 +18,7 @@ class App extends Component {
           <Route
             path="/status"
             render={() => {
+              changeFavicon('/images/chromebotLogo.png');
               return (
                 <iframe src="https://chromebook777production.statuspage.io/" />
               );
@@ -25,6 +26,7 @@ class App extends Component {
           />
           <Route
             render={() => {
+              changeFavicon('/images/canaryLogo.png');
               return (
                 <iframe src="https://chromebot-canary-and-chromebot.weebly.com/" />
               );
