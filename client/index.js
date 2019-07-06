@@ -19,7 +19,7 @@ class App extends Component {
             path="/status"
             render={() => {
               return (
-                <iframe src="https://chromebot-status-page-beta-114.freshstatus.io/" />
+                <iframe src="https://chromebook777production.statuspage.io/" />
               );
             }}
           />
