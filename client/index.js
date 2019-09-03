@@ -28,7 +28,7 @@ class App extends Component {
             render={() => {
               changeFavicon('/images/chromebotLogo.png');
               return (
-                <iframe src="https://vincentdistoer.github.io/test" />
+                <iframe src="https://vincentdistoer2.github.io/my-test/Home.html" />
               );
             }}
           />
