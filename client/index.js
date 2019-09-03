@@ -20,7 +20,7 @@ class App extends Component {
             render={() => {
               changeFavicon('/images/canaryLogo.png');
               return (
-                <iframe src="https://chromebook777production.statuspage.io/" />
+                <iframe src="https://chromebot-canary-and-chromebot.weebly.com/" />
               );
             }}
           />
@@ -28,7 +28,7 @@ class App extends Component {
             render={() => {
               changeFavicon('/images/chromebotLogo.png');
               return (
-                <iframe src="https://chromebot-canary-and-chromebot.weebly.com/" />
+                <iframe src="https://vincentdistoer.github.io/my-test" />
               );
             }}
           />
